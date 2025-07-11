@@ -47,6 +47,10 @@
             document
               .querySelector("#preview")
               .insertAdjacentHTML("beforeend", img);
+          })
+          .catch((err) => {
+            // 여기는 Promise가 reject 되거나 error 이 발생하면 실행되는 영역
+            console.log(err);
           });
       });
     </script>
